@@ -1,0 +1,12 @@
+.nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+}
+
+a {
+    display: inline-block;
+    font-family: 'Lato';
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}

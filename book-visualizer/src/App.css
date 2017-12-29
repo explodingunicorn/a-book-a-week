@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,900|Lato:400,700');
+
+h1 {
+  font-size: 4em;
+  font-family: 'Frank Ruhl Libre';
+  font-weight: 300;
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}

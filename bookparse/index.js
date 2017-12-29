@@ -11,12 +11,16 @@ const data = {
 
 function analyzeSentiment(words) {
     let totalWords = 0;
+    let totalSentimentWords = 0;
+    let totalLength = 0;
     let totalSentiment = 0;
     let modeCounter = {};
     let medianArr = [];
 
     for (var i = 0; i < words.length; i++) {
         const sentimentVal = sentiment(words[i].word).score;
+        totalLength += words[i].wordLength;
+        totalWords++;
 
         if (sentimentVal !== 0) {
             if (!modeCounter[sentimentVal]) {
@@ -28,12 +32,13 @@ function analyzeSentiment(words) {
                 modeCounter[sentimentVal].total++;
             }
             totalSentiment += sentimentVal;
-            totalWords++;
+            totalSentimentWords++;
             medianArr.push(sentimentVal);
         }
     }
 
-    data.averageSentiment = totalSentiment/totalWords;
+    data.averageWordLength = totalLength/totalWords;
+    data.averageSentiment = totalSentiment/totalSentimentWords;
     data.modeSentiment = _.toArray(modeCounter).sort((a, b) => {return b.total - a.total})[0].val;
     data.medianSentiment = medianArr.sort((a, b) => { return a - b })[Math.ceil(medianArr.length/2)];
 }
@@ -43,8 +48,8 @@ function sortData() {
     wordsArr.sort((a, b) => {
         return b.count - a.count;
     });
-    let top20 = wordsArr.slice(0, 20);
-    data.topWords = top20;
+    let top = wordsArr.slice(0, 30);
+    data.topWords = top;
     data.differentWords = wordsArr.length;
     analyzeSentiment(wordsArr);
 }
@@ -58,6 +63,7 @@ function updateDict(word) {
     else {
         dict[word] = {};
         dict[word].word = word;
+        dict[word].wordLength = word.split('').length;
         dict[word].count = 1;
     }
 }
@@ -71,7 +77,7 @@ function parseText(text) {
     //Loop through the array and add to dictionary.
     for (var i = 0; i < textArr.length; i++) {
         let word = textArr[i].toLowerCase();
-        if (word && !commonWords[word]) {
+        if (word && !commonWords[word] && word.split('').length > 2) {
             updateDict(word);
         }
     }
@@ -82,7 +88,6 @@ new reader.PdfReader().parseFileItems(process.argv[2], function(err, item) {
         console.log(err);
     }
     else if (!item) {
-        console.log('done');
         sortData();
         console.log(data);
     }
