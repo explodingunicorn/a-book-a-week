@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jsonfile": "^4.0.0",
     "lodash": "^4.17.4",
     "pdfreader": "^0.2.4",
     "sentiment": "^4.1.0"

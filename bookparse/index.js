@@ -2,12 +2,20 @@ const reader = require('pdfreader');
 const _ = require('lodash');
 const commonWords = require('./commonWords').commonWords;
 const sentiment = require('sentiment');
+const jsonfile = require('jsonfile');
+let userData;
 
 let wordsArr;
 const dict = {};
 const data = {
     totalWords: 0
 };
+
+if (process.argv[2] && process.argv[3]) {
+    userData = require('./myData/' + process.argv[3]);
+    console.log(userData);
+    startParse();
+}
 
 function analyzeSentiment(words) {
     let totalWords = 0;
@@ -17,6 +25,7 @@ function analyzeSentiment(words) {
     let modeCounter = {};
     let medianArr = [];
 
+    //Loop through all of the words recorded in the dictionary, get their sentiment values.
     for (var i = 0; i < words.length; i++) {
         const sentimentVal = sentiment(words[i].word).score;
         totalLength += words[i].wordLength;
@@ -83,16 +92,32 @@ function parseText(text) {
     }
 }
 
-new reader.PdfReader().parseFileItems(process.argv[2], function(err, item) {
-    if (err) {
-        console.log(err);
-    }
-    else if (!item) {
-        sortData();
-        console.log(data);
-    }
-    else if (item.text) {
-        parseText(item.text);
-    }
-});
+function saveData() {
+    let finalData = {};
+    finalData.analytics = data;
+    finalData.bookInfo = userData.bookInfo;
+    finalData.coreyData = userData.coreyData;
+
+    jsonfile.writeFile('./bookData/test.json', finalData, {spaces: 2}, (err) => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('File has been created');
+    });
+}
+
+function startParse() {
+    new reader.PdfReader().parseFileItems(process.argv[2], function(err, item) {
+        if (err) {
+            console.log(err);
+        }
+        else if (!item) {
+            sortData();
+            saveData();
+        }
+        else if (item.text) {
+            parseText(item.text);
+        }
+    });
+}
 

@@ -1,0 +1,173 @@
+{
+  "analytics": {
+    "totalWords": 44844,
+    "topWords": [
+      {
+        "word": "case",
+        "wordLength": 4,
+        "count": 784
+      },
+      {
+        "word": "molly",
+        "wordLength": 5,
+        "count": 223
+      },
+      {
+        "word": "know",
+        "wordLength": 4,
+        "count": 177
+      },
+      {
+        "word": "down",
+        "wordLength": 4,
+        "count": 158
+      },
+      {
+        "word": "through",
+        "wordLength": 7,
+        "count": 158
+      },
+      {
+        "word": "eyes",
+        "wordLength": 4,
+        "count": 157
+      },
+      {
+        "word": "armitage",
+        "wordLength": 8,
+        "count": 149
+      },
+      {
+        "word": "man",
+        "wordLength": 3,
+        "count": 140
+      },
+      {
+        "word": "something",
+        "wordLength": 9,
+        "count": 129
+      },
+      {
+        "word": "black",
+        "wordLength": 5,
+        "count": 125
+      },
+      {
+        "word": "over",
+        "wordLength": 4,
+        "count": 120
+      },
+      {
+        "word": "white",
+        "wordLength": 5,
+        "count": 119
+      },
+      {
+        "word": "maelcum",
+        "wordLength": 7,
+        "count": 115
+      },
+      {
+        "word": "hand",
+        "wordLength": 4,
+        "count": 106
+      },
+      {
+        "word": "face",
+        "wordLength": 4,
+        "count": 103
+      },
+      {
+        "word": "about",
+        "wordLength": 5,
+        "count": 102
+      },
+      {
+        "word": "head",
+        "wordLength": 4,
+        "count": 102
+      },
+      {
+        "word": "across",
+        "wordLength": 6,
+        "count": 100
+      },
+      {
+        "word": "way",
+        "wordLength": 3,
+        "count": 99
+      },
+      {
+        "word": "against",
+        "wordLength": 7,
+        "count": 97
+      },
+      {
+        "word": "finn",
+        "wordLength": 4,
+        "count": 96
+      },
+      {
+        "word": "thing",
+        "wordLength": 5,
+        "count": 96
+      },
+      {
+        "word": "riviera",
+        "wordLength": 7,
+        "count": 95
+      },
+      {
+        "word": "saw",
+        "wordLength": 3,
+        "count": 94
+      },
+      {
+        "word": "where",
+        "wordLength": 5,
+        "count": 94
+      },
+      {
+        "word": "time",
+        "wordLength": 4,
+        "count": 93
+      },
+      {
+        "word": "around",
+        "wordLength": 6,
+        "count": 92
+      },
+      {
+        "word": "see",
+        "wordLength": 3,
+        "count": 91
+      },
+      {
+        "word": "left",
+        "wordLength": 4,
+        "count": 91
+      },
+      {
+        "word": "old",
+        "wordLength": 3,
+        "count": 91
+      }
+    ],
+    "differentWords": 10708,
+    "averageWordLength": 6.589465819947702,
+    "averageSentiment": -0.47152317880794703,
+    "modeSentiment": -2,
+    "medianSentiment": -1
+  },
+  "bookInfo": {
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "publication": "July 1, 1984",
+    "genre": "Science Fiction"
+  },
+  "coreyData": {
+    "timeToRead": "TBA",
+    "personalRating": 5,
+    "description": "There's this dude Case and he used to a hacker but then he looses his super hacker powers after messing with the wrong dudes. Afterwards he starts living life on the edge (yolo), and is on the verge of death before he meets a mysterious man named Armitage. Armitage restores Case's super hacker powers for a price. In order for Case to keep his abilities he must pull off the ultimate hack for Armitage."
+  }
+}
