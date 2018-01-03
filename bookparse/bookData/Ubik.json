@@ -1,0 +1,175 @@
+{
+  "analytics": {
+    "totalWords": 34796,
+    "topWords": [
+      {
+        "word": "joe",
+        "wordLength": 3,
+        "count": 681
+      },
+      {
+        "word": "runciter",
+        "wordLength": 8,
+        "count": 390
+      },
+      {
+        "word": "know",
+        "wordLength": 4,
+        "count": 178
+      },
+      {
+        "word": "himself",
+        "wordLength": 7,
+        "count": 163
+      },
+      {
+        "word": "did",
+        "wordLength": 3,
+        "count": 153
+      },
+      {
+        "word": "pat",
+        "wordLength": 3,
+        "count": 151
+      },
+      {
+        "word": "time",
+        "wordLength": 4,
+        "count": 149
+      },
+      {
+        "word": "about",
+        "wordLength": 5,
+        "count": 142
+      },
+      {
+        "word": "thought",
+        "wordLength": 7,
+        "count": 134
+      },
+      {
+        "word": "asked",
+        "wordLength": 5,
+        "count": 128
+      },
+      {
+        "word": "chip",
+        "wordLength": 4,
+        "count": 121
+      },
+      {
+        "word": "will",
+        "wordLength": 4,
+        "count": 116
+      },
+      {
+        "word": "how",
+        "wordLength": 3,
+        "count": 115
+      },
+      {
+        "word": "our",
+        "wordLength": 3,
+        "count": 112
+      },
+      {
+        "word": "more",
+        "wordLength": 4,
+        "count": 109
+      },
+      {
+        "word": "way",
+        "wordLength": 3,
+        "count": 107
+      },
+      {
+        "word": "over",
+        "wordLength": 4,
+        "count": 107
+      },
+      {
+        "word": "ubik",
+        "wordLength": 4,
+        "count": 107
+      },
+      {
+        "word": "thats",
+        "wordLength": 5,
+        "count": 105
+      },
+      {
+        "word": "room",
+        "wordLength": 4,
+        "count": 103
+      },
+      {
+        "word": "any",
+        "wordLength": 3,
+        "count": 102
+      },
+      {
+        "word": "right",
+        "wordLength": 5,
+        "count": 101
+      },
+      {
+        "word": "see",
+        "wordLength": 3,
+        "count": 99
+      },
+      {
+        "word": "down",
+        "wordLength": 4,
+        "count": 96
+      },
+      {
+        "word": "before",
+        "wordLength": 6,
+        "count": 96
+      },
+      {
+        "word": "denny",
+        "wordLength": 5,
+        "count": 95
+      },
+      {
+        "word": "made",
+        "wordLength": 4,
+        "count": 91
+      },
+      {
+        "word": "door",
+        "wordLength": 4,
+        "count": 91
+      },
+      {
+        "word": "think",
+        "wordLength": 5,
+        "count": 87
+      },
+      {
+        "word": "maybe",
+        "wordLength": 5,
+        "count": 86
+      }
+    ],
+    "differentWords": 8320,
+    "averageWordLength": 6.956610576923077,
+    "averageSentiment": -0.24521072796934865,
+    "modeSentiment": -2,
+    "medianSentiment": -1
+  },
+  "bookInfo": {
+    "title": "Ubik",
+    "author": "Philip K. Dick",
+    "publication": "1969",
+    "genre": "Science Fiction"
+  },
+  "coreyData": {
+    "month": 1,
+    "number": 3,
+    "timeToRead": "TBA",
+    "personalRating": 5,
+    "description": "There's this dude Case and he used to a hacker but then he looses his super hacker powers after messing with the wrong dudes. Afterwards he starts living life on the edge (yolo), and is on the verge of death before he meets a mysterious man named Armitage. Armitage restores Case's super hacker powers for a price. In order for Case to keep his abilities he must pull off the ultimate hack for Armitage."
+  }
+}

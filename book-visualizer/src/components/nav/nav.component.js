@@ -5,7 +5,7 @@ import './nav.style.css';
 class Nav extends Component {
     render() {
         return (
-            <div class="nav">
+            <div className="nav">
                 <Link to={'/home'}>Home</Link>
                 <div></div>
                 <Link to={'/home'}>About</Link>
