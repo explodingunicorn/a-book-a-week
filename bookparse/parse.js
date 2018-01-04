@@ -13,7 +13,6 @@ const data = {
 
 if (process.argv[2] && process.argv[3]) {
     userData = require('./myData/' + process.argv[3]);
-    console.log(userData);
     startParse();
 }
 
@@ -98,7 +97,7 @@ function saveData() {
     finalData.bookInfo = userData.bookInfo;
     finalData.coreyData = userData.coreyData;
 
-    jsonfile.writeFile('./bookData/test.json', finalData, {spaces: 2}, (err) => {
+    jsonfile.writeFile('./bookData/' + userData.bookInfo.title.replace(" ", "") + '.json', finalData, {spaces: 2}, (err) => {
         if (err) {
             return console.log(err);
         }
