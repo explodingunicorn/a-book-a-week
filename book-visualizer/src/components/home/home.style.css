@@ -1,0 +1,6 @@
+.sample-data {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}

@@ -1,13 +1,74 @@
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,900|Lato:400,700');
 
+:root {
+  --main-content-grid: 1fr 1fr 60% 1fr 1fr;
+
+  --serif: 'Frank Ruhl Libre', serif;
+  --sans-serif: 'Lato', arial;
+
+  --black: #292f36;
+  --grey: #c4c6c8;
+  --violet: #b99ecb;
+  --dark-violet: #826f8e;
+  --turquoise: #00bfb2;
+  --dark-turquoise: #008b82;
+  --blue: #71A9F7;
+  --dark-blue: #537BB4;
+
+  --border: 1px solid var(--grey);
+  --border-thick: 2px solid var(--grey);
+
+  --shadow-light: 0px 0px 10px -2px var(--grey);
+}
+
 h1 {
-  font-size: 4em;
-  font-family: 'Frank Ruhl Libre';
+  font-size: 4.3em;
+  font-family: var(--serif);
   font-weight: 300;
 }
 
+h2 { 
+  font-size: 2.5em;
+  font-family: var(--sans-serif);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: var(--sans-serif);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 2.2em;
+  font-family: var(--serif);
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--black);
+}
+
+.small {
+  font-size: 1.5em;
+}
+
+a {
+  color: var(--blue);
+}
+
 .main-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+  display: grid;
+  grid-template-columns: var(--main-content-grid);
+  padding: 120px 0;
+}
+
+.main-container > * {
+  grid-column: 3;
+}
+
+.full-width {
+  display: grid;
+  grid-column: 2 / -2;
 }

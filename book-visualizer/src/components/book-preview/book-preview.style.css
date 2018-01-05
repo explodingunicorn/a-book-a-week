@@ -1,0 +1,51 @@
+.book-preview-container {
+    border: var(--border);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 5% auto 1fr auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all .4s;
+    width: 100%;
+}
+
+.book-preview-container > * {
+    align-self: center;
+}
+
+.book-preview-container:hover {
+    box-shadow: var(--shadow-light);
+    cursor: pointer;
+}
+
+.highlight {
+    transition: all .4s;
+}
+
+.book-preview-container:hover .highlight {
+    color: var(--turquoise);
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container > img {
+    height: auto;
+    width: 100%;
+}
+
+.book-info {
+    align-self: center;
+}
+
+h4 {
+    align-self: center;
+    display: inline-block;
+    margin: 0;
+    margin-left: 15px;
+}
+
+h2 {
+    margin: 0;
+}

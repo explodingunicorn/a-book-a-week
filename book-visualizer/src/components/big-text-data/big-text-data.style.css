@@ -1,0 +1,26 @@
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.big-text-data {
+    padding: 80px 0;
+    border: var(--border);
+    box-shadow: var(--shadow-light);
+    margin: 0 20px;
+}
+
+.big-text-data:nth-child(1) > h3 {
+    color: var(--violet);
+    text-shadow: .5px .5px var(--dark-violet);
+}
+
+.big-text-data:nth-child(2) > h3 {
+    color: var(--turquoise);
+    text-shadow: .5px .5px var(--dark-turquoise);
+}
+
+.big-text-data:nth-child(3) > h3 {
+    color: var(--blue);
+    text-shadow: .5px .5px var(--dark-blue);
+}

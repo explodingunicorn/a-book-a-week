@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import BigTextData from '../big-text-data/big-text-data.component';
+import BookPreview from '../book-preview/book-preview.component';
+import './home.style.css';
+
 import BooksData from '../../data/books';
+import overallData from '../../data/overall';
+import Months from '../../data/months';
 
 class Home extends Component {
     renderBooks(arr) {
-        console.log(arr);
-        return arr.map((book) => {
-            return <h2>{book.bookInfo.title}</h2>;
+        return arr[arr.length-1].map((book) => {
+            return <BookPreview book={book}/>;
         });
     }
 
@@ -23,9 +28,14 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
-                <h1>This is the Home Page</h1>
-                { this.renderBookArray() }
+            <div className="main-container">
+                <div className="full-width sample-data">
+                    <BigTextData data={overallData.totalWords} description="Total Words Read"/>
+                    <BigTextData data={overallData.averageWords} description="Words Read per Week"/>
+                    <BigTextData data={overallData.totalHours} description="Hours of Reading"/>
+                </div>
+                <h2>Read in { Months[BooksData.books.length-1] }:</h2>
+                { this.renderBooks(BooksData.books) }
             </div>
         );
     }

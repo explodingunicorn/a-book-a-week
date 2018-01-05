@@ -97,7 +97,7 @@ function saveData() {
     finalData.bookInfo = userData.bookInfo;
     finalData.coreyData = userData.coreyData;
 
-    jsonfile.writeFile('./bookData/' + userData.bookInfo.title.replace(" ", "") + '.json', finalData, {spaces: 2}, (err) => {
+    jsonfile.writeFile('./bookData/' + userData.bookInfo.title.replace(/ /g, "").replace(/[^\w\s]/gi, '') + '.json', finalData, {spaces: 2}, (err) => {
         if (err) {
             return console.log(err);
         }
